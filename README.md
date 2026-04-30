@@ -26,7 +26,7 @@ $$Score = \sum_{white} (Material + Position) - \sum_{black} (Material + Position
 
 Below is a preview of the application in action. It shows the visual board, the efficiency comparison between algorithms, and the recommended moves for the current position.
 
-![Chess Advisor Screenshot](Images\screenshot.png)
+![Chess Advisor Screenshot](screenshot.png)
 
 ## Installation & Usage
 1. Clone this repository to your local machine.
