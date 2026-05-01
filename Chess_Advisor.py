@@ -166,6 +166,10 @@ class ChessAdvisorGUI:
                                font=("Helvetica", 12, "bold"), bg="#27ae60", fg="white", padx=20)
         self.calc_btn.pack(pady=10)
 
+        self.restart_btn = Button(self.res_frame, text="Restart Analysis", command=self.restart, 
+                                  font=("Helvetica", 12, "bold"), bg="#e74c3c", fg="white", padx=20)
+        self.restart_btn.pack(pady=10)
+
         self.stats_label = Label(self.res_frame, text="Press calculate to start...", font=("Consolas", 11), 
                                  fg="#ecf0f1", bg="#34495e", justify=LEFT, padx=10, pady=10)
         self.stats_label.pack(pady=10)
@@ -186,6 +190,11 @@ class ChessAdvisorGUI:
                             width=2, height=1, bg=color, fg="black")
                 lbl.grid(row=r, column=c)
 
+    def restart(self):
+        self.board.reset()
+        self.draw_board()
+        self.stats_label.config(text="Press calculate to start again")
+
     def calculate(self):
         global minimax_nodes, ab_nodes
         minimax_nodes = 0 
@@ -203,6 +212,10 @@ class ChessAdvisorGUI:
         move_results.sort(key=lambda x: x[1], reverse=True)
         
         recommended = move_results[0]
+
+        self.board.push(recommended)
+        self.draw_board()
+
         alternatives = move_results[1:4] 
         
         saved = minimax_nodes - ab_nodes
