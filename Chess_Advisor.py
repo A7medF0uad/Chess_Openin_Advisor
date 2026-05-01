@@ -140,7 +140,7 @@ class ChessAdvisorGUI:
     def __init__(self, root):
         self.root = root 
         icon = PhotoImage(file='Images\\Icon.png')
-        # self.root.iconphoto(True, icon)
+        self.root.iconphoto(True, icon)
         self.root.title("Chess Opening Advisor [Alpha-Beta]")
         self.root.geometry("750x600")
         self.root.config(bg="#2c3e50")
