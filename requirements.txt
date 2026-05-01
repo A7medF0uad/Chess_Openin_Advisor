@@ -1,1 +1,2 @@
-chess>=1.10.0
+python-chess>=1.10.0
+# Tkinter is required for the GUI. It is usually included with Python, but if not, install it via your OS package manager.

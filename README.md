@@ -64,8 +64,8 @@ Click "Restart Analysis" to reset the board to the starting position and clear p
 ## Requirements
 
 - Python 3.x
-- [python-chess](https://pypi.org/project/python-chess/)
-- Tkinter (usually included with Python)
+- [python-chess](https://pypi.org/project/python-chess/) (install via `pip install python-chess`)
+- Tkinter (usually included with Python; if missing, install via your OS package manager, e.g., `sudo apt-get install python3-tk` on Ubuntu)
 
 ## File Structure
 
