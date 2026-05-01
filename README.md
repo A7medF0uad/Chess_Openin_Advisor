@@ -43,7 +43,7 @@ Click "Restart Analysis" to reset the board to the starting position and clear p
 
 ## Application Screenshot
 
-> ![Chess Advisor Screenshot](Images\screenshot.png)
+> ![Chess Advisor Screenshot](screenshot.png)
 
 ## Installation & Usage
 
