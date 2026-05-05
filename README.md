@@ -27,6 +27,9 @@ Chess Opening Move Advisor is an interactive Python application that analyzes ch
 ### 1. Board Evaluation
 The engine evaluates the board using both material values and positional bonuses/penalties (Piece-Square Tables) for each piece type. The evaluation function rewards good piece placement and penalizes poor positioning.
 
+## *formula*
+**$$Score = \sum_{white} (Material + Position) - \sum_{black} (Material + Position)$$**
+
 ### 2. Search Algorithms
 - **Pure Minimax:** Explores all possible moves to a fixed depth, selecting the move that maximizes the minimum gain.
 - **Alpha-Beta Pruning:** Optimizes the search by pruning branches that cannot affect the outcome, greatly reducing computation.
